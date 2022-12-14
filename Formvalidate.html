@@ -1,0 +1,37 @@
+
+<html >
+<head>
+ <title>form validate</title>
+ <script type="text/javascript">
+ 
+ function validate()
+ {
+  var Username =document.getElementById ("unname");
+  var password =document.getElementById ("pass");
+ 
+   if(Username.value.trim() ==""||password.value.trim()=="")
+   {
+         alert("no blank value not alloewd");
+            return false ;
+   }
+   else 
+      {
+          true;
+      } 
+    }
+ 
+ </script>
+ 
+</head>
+<body>
+  <form onsubmit="return validate()"  action="message.html">
+     <input id="unname" placeholder="Username"
+     type="text"required/>
+     <br><br> 
+     <input id="pass" placeholder="passsword"
+     type="password"required/>
+     <br><br>
+     <button  type="submit">submit</button>
+  </form>   
+</body>
+</html>
